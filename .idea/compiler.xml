@@ -6,14 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cluod-api-lxj" />
         <module name="cluod-common" />
         <module name="cluod-eureka" />
+        <module name="cluod-feign-lxj" />
+        <module name="cluod-provider-lxj" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cluod-eureka" options="-parameters" />
+      <module name="cluod-feign-lxj" options="-parameters" />
+      <module name="cluod-provider-lxj" options="-parameters" />
     </option>
   </component>
 </project>
